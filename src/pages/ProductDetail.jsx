@@ -42,7 +42,7 @@ function ProductDetail() {
                     </div>
 
                     <div className="product-details">
-                        <h3 className="details-title">THÔNG TIN</h3>
+                        <h3 className="details-title">THÔNG TIN CHUNG VỀ SẢN PHẨM</h3>
                         <ul className="details-list">
                             <li className="details-item">• Sản phẩm làm từ vỏ bắp tái chế – lựa chọn xanh cho cuộc sống hiện đại.</li>
                             <li className="details-item">• Chất liệu: Vỏ bắp tự nhiên, được xử lý khéo léo để đảm bảo độ bền và tính thẩm mỹ.</li>
@@ -53,8 +53,18 @@ function ProductDetail() {
                             <p className="spec-item">Vận chuyển nhanh trong 2-3 ngày làm việc.</p>
                             <p className="spec-item">Sản phẩm độc quyền chỉ có tại Nhà Bắp.</p>
                         </div>
+
                     </div>
 
+                    <div className="product-care">
+                        <h3 className="details-title">CÁCH BẢO QUẢN</h3>
+                        <ul className="details-list">
+                            <li className="details-item">• Tránh tiếp xúc trực tiếp với nước và môi trường ẩm ướt trong thời gian dài.</li>
+                            <li className="details-item">• Bảo quản nơi khô ráo, thoáng mát.</li>
+                            <li className="details-item">• Lau nhẹ bằng khăn khô hoặc khăn ẩm mềm khi bị bám bụi.</li>
+                            <li className="details-item">• Phơi nắng khi sản phẩm có dấu hiệu mềm để độ bền của sản phẩm.</li>
+                        </ul>
+                    </div>
 
                     {/* Nút quay lại đặt cuối */}
                     <div className="product-buttons">
