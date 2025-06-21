@@ -77,21 +77,21 @@ function Footer() {
                         <a href="https://www.facebook.com/profile.php?id=61568821003334"
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label="Facebook của Eco Bắp">
+                            aria-label="Facebook của Balabin">
                             <FaFacebook className="social-icon" />
                             <span className="social-name">Facebook</span>
                         </a>
                         <a href="https://www.instagram.com/ecobap"
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label="Instagram của Eco Bắp">
+                            aria-label="Instagram của Balabin ">
                             <FaInstagram className="social-icon" />
                             <span className="social-name">Instagram</span>
                         </a>
                         <a href="https://www.tiktok.com/@eco4.bap"
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label="TikTok của Eco Bắp">
+                            aria-label="TikTok của Balabin">
                             <FaTiktok className="social-icon" />
                             <span className="social-name">TikTok</span>
                         </a>
@@ -101,7 +101,7 @@ function Footer() {
 
             <div className="footer-bottom">
                 <div className="copyright">
-                    &copy; {currentYear} Eco Bắp - Khơi Nguồn Sáng Tạo
+                    &copy; {currentYear} Balabin - Khơi Nguồn Sáng Tạo
                 </div>
                 <div className="legal-links">
                     <Link to="/privacy-policy" onClick={scrollToTop}>Chính sách bảo mật</Link>
