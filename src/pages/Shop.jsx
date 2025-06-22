@@ -135,7 +135,7 @@ function Shop() {
                                     {visibleQRs[product.id] && (
                                         <div className="qr-code">
                                             <QRCodeSVG
-                                                value={`${"https://app.netlify.com/"}/product/${product.id}`}
+                                                value={`${window.location.origin}/product/${product.id}`}
                                                 size={80}
                                             />
                                             <p className="qr-label">Quét để xem chi tiết</p>
