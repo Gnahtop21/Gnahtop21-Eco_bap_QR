@@ -2,7 +2,7 @@ export const products = [
   {
     id: 1,
     image: require("./img/img8.jpg"),
-    video: require("./videos/ecoSeaVer1.mp4"),
+    video: require("./videos/ecoFlowerVer1.mp4"),
     name: "Túi Hoa - EcoFlower ver 1",
     description: "Balo nhỏ xinh từ vỏ bắp, phù hợp đi chơi",
     price: 130000,
