@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faPlay, faTimes } from '@fortawesome/free-solid-svg-icons';
 import '../cssPages/ProductDetail.css';
 import { products } from '../db';
 
@@ -9,30 +9,77 @@ function ProductDetail() {
     const { id } = useParams();
     const navigate = useNavigate();
     const [product, setProduct] = useState(null);
+    const [isVideoVisible, setIsVideoVisible] = useState(false);
 
     useEffect(() => {
-        setProduct(products.find(p => p.id === parseInt(id)));
+        const found = products.find(p => p.id === parseInt(id));
+        setProduct(found);
         window.scrollTo(0, 0);
+        setIsVideoVisible(false);
     }, [id]);
 
     if (!product) return <div>Không tìm thấy sản phẩm</div>;
 
     const recommendedProducts = products
         .filter(item => item.id !== parseInt(id))
-        .slice(0, 4);
+        .slice(0, 6);
 
     return (
         <div className="main-product-wrapper">
-            {/* Chi tiết sản phẩm */}
             <div className="product-layout-container">
                 <div className="product-image-section">
-                    <img src={product.image} alt={product.name} className="product-main-image" />
+                    <div className="product-image-container">
+                        <img
+                            src={product.image}
+                            alt={product.name}
+                            className="product-main-image"
+                        />
+
+                        {/* Nút xem video AI */}
+                        {product.video && (
+                            <button
+                                className="view-video-btn"
+                                onClick={() => setIsVideoVisible(!isVideoVisible)}
+                            >
+                                <FontAwesomeIcon icon={isVideoVisible ? faTimes : faPlay} />
+                                {isVideoVisible ? 'Ẩn video AI' : 'Xem video AI'}
+                            </button>
+                        )}
+                    </div>
+
+                    {/* Video AI overlay */}
+                    {product.video && isVideoVisible && (
+                        <div className="video-overlay">
+                            <div className="video-container">
+                                <div className="video-header">
+                                    <h3 className="video-title">Video AI Demo - {product.name}</h3>
+                                    <button
+                                        className="close-video-btn"
+                                        onClick={() => setIsVideoVisible(false)}
+                                    >
+                                        <FontAwesomeIcon icon={faTimes} />
+                                    </button>
+                                </div>
+                                <div className="video-wrapper">
+                                    <video
+                                        controls
+                                        className="product-video"
+                                        autoPlay
+                                        playsInline
+                                    >
+                                        <source src={product.video} type="video/mp4" />
+                                        Trình duyệt không hỗ trợ video.
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    )}
                 </div>
 
                 <div className="product-info-section">
                     <div className="product-heading">
                         <h1 className="product-title">{product.name}</h1>
-                        <p className="product-sku">SKU: {product.id}</p>
+                        <p className="product-sku">Mã hàng: {product.id}</p>
                     </div>
 
                     <div className="product-pricing">
@@ -44,29 +91,22 @@ function ProductDetail() {
                     <div className="product-details">
                         <h3 className="details-title">THÔNG TIN CHUNG VỀ SẢN PHẨM</h3>
                         <ul className="details-list">
-                            <li className="details-item">• Sản phẩm làm từ vỏ bắp tái chế – lựa chọn xanh cho cuộc sống hiện đại.</li>
-                            <li className="details-item">• Chất liệu: Vỏ bắp tự nhiên, được xử lý khéo léo để đảm bảo độ bền và tính thẩm mỹ.</li>
-                            <li className="details-item">• Thiết kế thủ công tinh tế, phù hợp túi tiền.</li>
-                            <li className="details-item">• Màu sắc và họa tiết mang phong cách mộc mạc, gần gũi với thiên nhiên.</li>
+                            <li className="details-item">• Làm từ vỏ bắp tái chế – lựa chọn xanh cho cuộc sống hiện đại.</li>
+                            <li className="details-item">• Chất liệu tự nhiên, xử lý thủ công tinh tế.</li>
+                            <li className="details-item">• Thiết kế thân thiện môi trường, phù hợp túi tiền.</li>
+                            <li className="details-item">• Màu sắc mộc mạc, gần gũi với thiên nhiên.</li>
                         </ul>
-                        <div className="product-specs">
-                            <p className="spec-item">Vận chuyển nhanh trong 2-3 ngày làm việc.</p>
-                            <p className="spec-item">Sản phẩm độc quyền chỉ có tại Nhà Bắp.</p>
-                        </div>
-
                     </div>
 
                     <div className="product-care">
                         <h3 className="details-title">CÁCH BẢO QUẢN</h3>
                         <ul className="details-list">
-                            <li className="details-item">• Tránh tiếp xúc trực tiếp với nước và môi trường ẩm ướt trong thời gian dài.</li>
-                            <li className="details-item">• Bảo quản nơi khô ráo, thoáng mát.</li>
-                            <li className="details-item">• Lau nhẹ bằng khăn khô hoặc khăn ẩm mềm khi bị bám bụi.</li>
-                            <li className="details-item">• Phơi nắng khi sản phẩm có dấu hiệu mềm để độ bền của sản phẩm.</li>
+                            <li className="details-item">• Tránh nước và môi trường ẩm.</li>
+                            <li className="details-item">• Lau nhẹ khi bám bụi, bảo quản nơi khô thoáng.</li>
+                            <li className="details-item">• Phơi nắng nhẹ nếu bị mềm.</li>
                         </ul>
                     </div>
 
-                    {/* Nút quay lại đặt cuối */}
                     <div className="product-buttons">
                         <button className="back-to-shop-btn" onClick={() => navigate('/shop')}>
                             <FontAwesomeIcon icon={faArrowLeft} /> QUAY LẠI SHOP
@@ -91,7 +131,9 @@ function ProductDetail() {
                             <div className="recommended-product-info">
                                 <h3 className="recommended-product-name">{item.name}</h3>
                                 <div className="recommended-product-price">
-                                    <span className="recommended-current-price">{item.price.toLocaleString()} VNĐ</span>
+                                    <span className="recommended-current-price">
+                                        {item.price.toLocaleString()} VNĐ
+                                    </span>
                                 </div>
                             </div>
                         </div>

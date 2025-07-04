@@ -9,6 +9,7 @@ import Shop from "./pages/Shop";
 import ProductDetail from "./pages/ProductDetail";
 import News from "./pages/News";
 import Footer from "./component/Footer";
+
 // Import các component khác nếu cần
 
 function App() {
