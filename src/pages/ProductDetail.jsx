@@ -91,19 +91,19 @@ function ProductDetail() {
                     <div className="product-details">
                         <h3 className="details-title">THÔNG TIN CHUNG VỀ SẢN PHẨM</h3>
                         <ul className="details-list">
-                            <li className="details-item">• Làm từ vỏ bắp tái chế – lựa chọn xanh cho cuộc sống hiện đại.</li>
-                            <li className="details-item">• Chất liệu tự nhiên, xử lý thủ công tinh tế.</li>
-                            <li className="details-item">• Thiết kế thân thiện môi trường, phù hợp túi tiền.</li>
-                            <li className="details-item">• Màu sắc mộc mạc, gần gũi với thiên nhiên.</li>
+                            <li className="details-item"> Làm từ vỏ bắp tái chế – lựa chọn xanh cho cuộc sống hiện đại.</li>
+                            <li className="details-item"> Chất liệu tự nhiên, xử lý thủ công tinh tế.</li>
+                            <li className="details-item"> Thiết kế thân thiện môi trường, phù hợp túi tiền.</li>
+                            <li className="details-item"> Màu sắc mộc mạc, gần gũi với thiên nhiên.</li>
                         </ul>
                     </div>
 
                     <div className="product-care">
                         <h3 className="details-title">CÁCH BẢO QUẢN</h3>
                         <ul className="details-list">
-                            <li className="details-item">• Tránh nước và môi trường ẩm.</li>
-                            <li className="details-item">• Lau nhẹ khi bám bụi, bảo quản nơi khô thoáng.</li>
-                            <li className="details-item">• Phơi nắng nhẹ nếu bị mềm.</li>
+                            <li className="details-item"> Tránh nước và môi trường ẩm.</li>
+                            <li className="details-item"> Lau nhẹ khi bám bụi, bảo quản nơi khô thoáng.</li>
+                            <li className="details-item"> Phơi nắng nhẹ nếu bị mềm.</li>
                         </ul>
                     </div>
 
