@@ -6,12 +6,36 @@ import News2 from '../img/SocTrangEvent.jpg';
 import News3 from '../img/business.jpg';
 import News4 from '../img/THTPCT.jpg';
 import News5 from '../img/nhaCoBinhThuy.jpg';
+import News7 from '../img/startupWheel.png';
+import News6 from '../img/BaoNLD.png';
 
 import NewsLazada from '../img/lazada.jpg';
 import '../cssPages/News.css';
 
 function News() {
     const newsItems = [
+        {
+            id: 8,
+            title: "Balabin tự hào đạt Top 10 - Startup Wheel 2025",
+            category: "Truyền thông",
+            date: "06/07/2025",
+            summary: "Balabin tự hào khi lọt vào Top 10 Startup Wheel 2025 – một trong những đấu trường khởi nghiệp uy tín hàng đầu khu vực Đông Nam Á, khẳng định tiềm năng của những sản phẩm thân thiện với môi trường trên thị trường hiện đại.",
+            content: "Vào ngày 27/06/2025, Nhà Balabin tự hào khi lọt vào Top 10 Startup Wheel 2025 – một trong những đấu trường khởi nghiệp uy tín hàng đầu khu vực Đông Nam Á, khẳng định tiềm năng của những sản phẩm thân thiện với môi trường trên thị trường hiện đại.",
+            image: News7,
+            alt: "Balabin đứng vị trí Top 10 Startup Wheel 2025 – khẳng định dấu ấn khởi nghiệp xanh trên sóng truyền hình Cần Thơ.",
+            facebookLink: "https://www.facebook.com/share/p/1LumMGbBg2/"
+        },
+        {
+            id: 7,
+            title: "Đại học FPT đăng lại - Báo Người Lao Động đưa tin về nhóm Balabin",
+            category: "Truyền thông",
+            date: "27/06/2025",
+            summary: "Biến vỏ bắp thành sản phẩm độc đáo",
+            content: "Vào ngày 27/06/2025, Báo Người Lao Động đưa tin - Từ nguyên liệu thô sơ, họ đã biến vỏ bắp thành những sản phẩm độc đáo, góp phần giảm thiểu rác thải và bảo vệ môi trường",
+            image: News6,
+            alt: "Báo Người Lao Động đưa tin về Balabin",
+            facebookLink: "https://www.facebook.com/share/p/1Ev4VGnzMW/"
+        },
         {
             id: 6,
             title: "Nhà Balabin lên Sóng Truyền Hình Thành Phố Cần Thơ",
@@ -47,7 +71,7 @@ function News() {
         },
         {
             id: 3,
-            title: "Ra Mắt Bộ Sưu Tập Độc Đáo",
+            title: " Balabin ra Mắt Bộ Sưu Tập Độc Đáo",
             category: "Bộ sưu tập",
             date: "17/03/2024",
             summary: "Khám phá bộ sưu tập mới với những thiết kế tinh tế, sáng tạo từ nguyên liệu bền vững.",
