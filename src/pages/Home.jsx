@@ -6,7 +6,6 @@ import img1 from "../img/sanpham.jpg";
 import img2 from "../img/baovemoitruong.jpg";
 import img3 from "../img/daotaonghe.jpg";
 import img4 from "../img/business.jpg";
-import img5 from "../img/thaymuahang.jpg";
 import img6 from "../img/gianhang.jpg";
 import img7 from "../img/gianhangtetjpg.jpg";
 import img8 from "../img/XuanSacTayDo.jpg";
@@ -18,6 +17,14 @@ import ecoka from "../img/ecoka.jpg";
 import artHouse from "../img/artHouse.png";
 import nhaCoBinhThuy from "../img/nhaCoBinhThuy.jpg";
 import members from "../img/members.jpg";
+
+// Import member photos (bạn cần thêm các ảnh này vào thư mục img)
+import member1 from "../img/Thay_An.jpg";
+import member2 from "../img/members.jpg";
+import member3 from "../img/Lethang.jpg";
+import member4 from "../img/members.jpg";
+import member5 from "../img/members.jpg";
+import member6 from "../img/MinhThu.jpg";
 
 import "../cssPages/Home.css";
 import { useCart } from "../contexts/CartContext";
@@ -143,17 +150,91 @@ function Home() {
     }
   ];
 
+  // Thông tin thành viên nhóm
+  const teamMembers = [
+    {
+      id: 1,
+      name: "Võ Thiên Ân",
+      position: "Giảng viên hướng dẫn",
+      image: member1,
+      description: "Giảng viên giàu kinh nghiệm, hỗ trợ và định hướng nhóm trong quá trình nghiên cứu và phát triển sản phẩm.",
+      skills: ["Hướng dẫn học thuật", "Phát triển dự án", "Định hướng chiến lược"],
+      social: {
+        linkedin: "#",
+        email: "an@balabin.com"
+      }
+    }, {
+      id: 2,
+      name: "Đặng Thị Tuyết Nghi",
+      position: "Leader / CEO",
+      image: member2,
+      description: "Lãnh đạo nhóm với tư duy chiến lược và tầm nhìn phát triển sản phẩm từ vật liệu bền vững.",
+      skills: ["Lãnh đạo", "Chiến lược doanh nghiệp", "Quản lý nhóm"],
+      social: {
+        linkedin: "#",
+        email: "Nghidttcs170671@fpt.edu.vn"
+      }
+    },
+    {
+      id: 3,
+      name: "Lê Hữu Thắng",
+      position: "CTO / Giám đốc Công nghệ",
+      image: member3,
+      description: "Phụ trách phát triển công nghệ và tối ưu hóa quy trình số hóa trong dự án.",
+      skills: ["Công nghệ thông tin", "Phát triển hệ thống", "Tự động hóa"],
+      social: {
+        linkedin: "#",
+        email: "Thanglhce171168@fpt.edu.vn"
+      }
+    },
+    {
+      id: 4,
+      name: "Phạm Thị Quỳnh Như",
+      position: "CFO / Giám đốc Tài chính",
+      image: member4,
+      description: "Quản lý ngân sách và tài chính, đảm bảo tính bền vững cho các hoạt động của nhóm.",
+      skills: ["Tài chính doanh nghiệp", "Phân tích chi phí", "Lập kế hoạch ngân sách"],
+      social: {
+        linkedin: "#",
+        email: "Nhuptqce171947@fpt.edu.vn"
+      }
+    },
+    {
+      id: 5,
+      name: "Phan Hồng Khuyến",
+      position: "CPO / Điều phối sản xuất",
+      image: member5,
+      description: "Hỗ trợ điều phối quy trình sản xuất và đảm bảo chất lượng sản phẩm đầu ra.",
+      skills: ["Sản xuất", "Quản lý chất lượng", "Vận hành"],
+      social: {
+        linkedin: "#",
+        email: "Khuyenphcs171177@fpt.edu.vn"
+      }
+    },
+    {
+      id: 6,
+      name: "Trần Minh Thư",
+      position: "CMO / Giám đốc Marketing",
+      image: member6,
+      description: "Hỗ trợ trong truyền thông, tổ chức sự kiện và kết nối cộng đồng.",
+      skills: ["Truyền thông", "Sự kiện", "Quan hệ đối ngoại"],
+      social: {
+        linkedin: "#",
+        email: "Thutmcs170353@fpt.edu.vn"
+      }
+    }
+  ];
 
   const handlePrevEvent = () => {
     setCurrentEventIndex((prev) => {
-      const maxIndex = Math.ceil(events.length / 4) - 1; // Tổng số nhóm 4 card
+      const maxIndex = Math.ceil(events.length / 4) - 1;
       return prev === 0 ? maxIndex : prev - 1;
     });
   };
 
   const handleNextEvent = () => {
     setCurrentEventIndex((prev) => {
-      const maxIndex = Math.ceil(events.length / 4) - 1; // Tổng số nhóm 4 card
+      const maxIndex = Math.ceil(events.length / 4) - 1;
       return prev === maxIndex ? 0 : prev + 1;
     });
   };
@@ -176,21 +257,18 @@ function Home() {
           <div className="tag"> Welcome </div>
           <div className="tag"> To</div>
           <div className="tag"> Balabin</div>
-
           <div className="tag"> </div>
           <div className="tag"> Welcome </div>
           <div className="tag"> To</div>
           <div className="tag"> Balabin</div>
-
           <div className="tag"> </div>
           <div className="tag"> Welcome </div>
           <div className="tag"> To</div>
           <div className="tag"> Balabin</div>
-
-
         </div>
         <div className="fade"> </div>
       </div>
+
       <div className="home-hero">
         <div className="hero-image">
           <img src={nhaCoBinhThuy} alt="Hero" />
@@ -223,7 +301,6 @@ function Home() {
           ))}
         </div>
       </div>
-
 
       <div className="activities-section">
         <h2>Tầm Nhìn Và Sứ Mệnh</h2>
@@ -278,6 +355,53 @@ function Home() {
         </div>
       </div>
 
+      {/* Team Members Section */}
+      <div className="team-section">
+        <div className="team-header">
+          <h2>Đội Ngũ Thành Viên</h2>
+          <p>Gặp gỡ những con người tài năng đằng sau thành công của Balabin</p>
+        </div>
+        <div className="team-grid">
+          {teamMembers.map((member) => (
+            <div className="team-card" key={member.id}>
+              <div className="team-card-inner">
+                <div className="team-card-front">
+                  <div className="member-image">
+                    <img src={member.image} alt={member.name} />
+                    <div className="member-overlay">
+                      <div className="member-info">
+                        <h3>{member.name}</h3>
+                        <p>{member.position}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="team-card-back">
+                  <div className="member-details">
+                    <h3>{member.name}</h3>
+                    <h4>{member.position}</h4>
+                    <p>{member.description}</p>
+                    <div className="member-skills">
+                      <h5>Chuyên môn:</h5>
+                      <ul>
+                        {member.skills.map((skill, index) => (
+                          <li key={index}>{skill}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="member-contact">
+                      <a href={`mailto:${member.social.email}`} className="contact-btn">
+                        Liên hệ
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
       <div className="events-section">
         <h2>Sự Kiện và Workshop</h2>
         <div className="events-carousel">
@@ -317,7 +441,6 @@ function Home() {
         </div>
       </div>
 
-
       <div className="partners-section">
         <h2>Các Đối Tác </h2>
         <div className="partners-grid">
@@ -347,7 +470,8 @@ function Home() {
             <h3>Art House</h3>
             <p>
               Đối tác đồng hành trong lĩnh vực mỹ thuật ứng dụng và kênh phân phối sản phẩm sáng tạo.
-            </p>          </div>
+            </p>
+          </div>
         </div>
       </div>
     </div>
