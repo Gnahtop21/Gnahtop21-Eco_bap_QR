@@ -21,7 +21,7 @@ import members from "../img/members.jpg";
 // Import member photos (bạn cần thêm các ảnh này vào thư mục img)
 import member1 from "../img/Thay_An.jpg";
 import member2 from "../img/members.jpg";
-import member3 from "../img/Lethang.jpg";
+import member3 from "../img/LeThang.jpeg";
 import member4 from "../img/members.jpg";
 import member5 from "../img/members.jpg";
 import member6 from "../img/MinhThu.jpg";
