@@ -8,6 +8,7 @@ import News4 from '../img/THTPCT.jpg';
 import News5 from '../img/nhaCoBinhThuy.jpg';
 import News7 from '../img/startupWheel.png';
 import News6 from '../img/BaoNLD.png';
+import News8 from '../img/BaoThanhNien.png';
 
 import NewsLazada from '../img/lazada.jpg';
 import '../cssPages/News.css';
@@ -15,6 +16,16 @@ import '../cssPages/News.css';
 function News() {
     const newsItems = [
         {
+            id: 9,
+            title: "Báo Thanh Niên - Sinh viên làm đồ thủ công mỹ nghệ từ vỏ bắp",
+            category: "Truyền thông",
+            date: "25/07/2025",
+            summary: "Balabin vừa được báo Thanh Niên đưa tin về dự án cho thấy mực độ tin cậy và uy tín của dự án.",
+            content: "Vào ngày 25/07/2025, Nhà Balabin tự hào khi được Báo Thanh Niên đưa tin về dự án, cho thấy độ tin cậy và uy tín của nhóm",
+            image: News8,
+            content: "Vào ngày 25/07/2025, Nhà Balabin tự hào khi được Báo Thanh Niên đưa tin về dự án, cho thấy độ tin cậy và uy tín của nhóm",
+            facebookLink: "https://www.facebook.com/share/p/1AuznmrhP7/"
+        }, {
             id: 8,
             title: "Balabin tự hào đạt Top 10 - Startup Wheel 2025",
             category: "Truyền thông",
@@ -30,7 +41,7 @@ function News() {
             title: "Đại học FPT đăng lại - Báo Người Lao Động đưa tin về nhóm Balabin",
             category: "Truyền thông",
             date: "27/06/2025",
-            summary: "Biến vỏ bắp thành sản phẩm độc đáo",
+            summary: "Báo Người Lao Động đưa tin - Từ nguyên liệu thô sơ, họ đã biến vỏ bắp thành những sản phẩm độc đáo, góp phần giảm thiểu rác thải và bảo vệ môi trường",
             content: "Vào ngày 27/06/2025, Báo Người Lao Động đưa tin - Từ nguyên liệu thô sơ, họ đã biến vỏ bắp thành những sản phẩm độc đáo, góp phần giảm thiểu rác thải và bảo vệ môi trường",
             image: News6,
             alt: "Báo Người Lao Động đưa tin về Balabin",
