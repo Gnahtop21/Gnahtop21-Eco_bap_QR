@@ -9,32 +9,43 @@ import News5 from '../img/nhaCoBinhThuy.jpg';
 import News7 from '../img/startupWheel.png';
 import News6 from '../img/BaoNLD.png';
 import News8 from '../img/BaoThanhNien.png';
-
+import News9 from '../img/AnhNhom.jpg';
 import NewsLazada from '../img/lazada.jpg';
 import '../cssPages/News.css';
 
 function News() {
     const newsItems = [
         {
-            id: 9,
-            title: "Báo Thanh Niên - Sinh viên làm đồ thủ công mỹ nghệ từ vỏ bắp",
-            category: "Truyền thông",
-            date: "25/07/2025",
-            summary: "Balabin vừa được báo Thanh Niên đưa tin về dự án cho thấy mực độ tin cậy và uy tín của dự án.",
-            content: "Vào ngày 25/07/2025, Nhà Balabin tự hào khi được Báo Thanh Niên đưa tin về dự án, cho thấy độ tin cậy và uy tín của nhóm",
-            image: News8,
-            content: "Vào ngày 25/07/2025, Nhà Balabin tự hào khi được Báo Thanh Niên đưa tin về dự án, cho thấy độ tin cậy và uy tín của nhóm",
-            facebookLink: "https://www.facebook.com/share/p/1AuznmrhP7/"
-        }, {
+            id: 10,
+            title: "Truyền Hình Quốc Gia VTV3 - Sinh viên làm đồ thủ công mỹ nghệ từ vỏ bắp",
+            category: "Sự kiện nổi bật",
+            date: "02/08/2025",
+            summary: "Balabin vừa được Đài Truyền hình Quốc gia Việt Nam – Chương trình Cafe Sáng với VTV3 mời chia sẻ về dự án tại Hà Nội.",
+            content: "Vào sáng ngày 02/08/2025, dự án của Nhà Balabin vinh dự được Đài Truyền hình Quốc gia Việt Nam – Chương trình Cafe Sáng với VTV3 lựa chọn ghi hình và đưa tin. Việc được xuất hiện trên sóng truyền hình quốc gia không chỉ là một cột mốc đáng tự hào mà còn là minh chứng rõ ràng cho tính sáng tạo, giá trị xã hội và độ tin cậy của dự án. Sự quan tâm từ một kênh truyền thông uy tín như VTV3 đã góp phần lan tỏa mạnh mẽ thông điệp bảo vệ môi trường và gìn giữ bản sắc văn hóa thông qua các sản phẩm thủ công từ vỏ bắp do sinh viên thực hiện.",
+            image: News9,
+            facebookLink: "https://www.facebook.com/share/v/19jBbqB9Fe/"
+        }
+        ,
+        {
             id: 8,
             title: "Balabin tự hào đạt Top 10 - Startup Wheel 2025",
-            category: "Truyền thông",
+            category: "Sự kiện nổi bật",
             date: "06/07/2025",
             summary: "Balabin tự hào khi lọt vào Top 10 Startup Wheel 2025 – một trong những đấu trường khởi nghiệp uy tín hàng đầu khu vực Đông Nam Á, khẳng định tiềm năng của những sản phẩm thân thiện với môi trường trên thị trường hiện đại.",
             content: "Vào ngày 27/06/2025, Nhà Balabin tự hào khi lọt vào Top 10 Startup Wheel 2025 – một trong những đấu trường khởi nghiệp uy tín hàng đầu khu vực Đông Nam Á, khẳng định tiềm năng của những sản phẩm thân thiện với môi trường trên thị trường hiện đại.",
             image: News7,
             alt: "Balabin đứng vị trí Top 10 Startup Wheel 2025 – khẳng định dấu ấn khởi nghiệp xanh trên sóng truyền hình Cần Thơ.",
             facebookLink: "https://www.facebook.com/share/p/1LumMGbBg2/"
+        }, {
+            id: 9,
+            title: "Báo Thanh Niên - Sinh viên làm đồ thủ công mỹ nghệ từ vỏ bắp",
+            category: "Sự kiện nổi bật",
+            date: "25/07/2025",
+            summary: "Balabin vừa được báo Thanh Niên đưa tin về dự án cho thấy mực độ tin cậy và uy tín của dự án.",
+            content: "Vào ngày 25/07/2025, Nhà Balabin tự hào khi được Báo Thanh Niên đưa tin về dự án, cho thấy độ tin cậy và uy tín của nhóm",
+            image: News8,
+            content: "Vào ngày 25/07/2025, Nhà Balabin tự hào khi được Báo Thanh Niên đưa tin về dự án, cho thấy độ tin cậy và uy tín của nhóm",
+            facebookLink: "https://www.facebook.com/share/p/1AuznmrhP7/"
         },
         {
             id: 7,

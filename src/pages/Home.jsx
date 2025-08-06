@@ -14,16 +14,18 @@ import img10 from "../img/gianhangarthouse.jpg";
 import img11 from "../img/lamGiay.jpg";
 import fpt from "../img/fpt.jpg";
 import ecoka from "../img/ecoka.jpg";
+import quyenDesigner from "../img/QuyenDesigner.png";
 import artHouse from "../img/artHouse.png";
 import nhaCoBinhThuy from "../img/nhaCoBinhThuy.jpg";
+import anhNhom from "../img/AnhNhom.jpg";
 import members from "../img/members.jpg";
 
 // Import member photos (bạn cần thêm các ảnh này vào thư mục img)
-import member1 from "../img/Thay_An.jpg";
-import member2 from "../img/members.jpg";
+import member1 from "../img/ThayAn.jpg";
+import member2 from "../img/Nghi.jpg";
 import member3 from "../img/LeThang.jpeg";
-import member4 from "../img/members.jpg";
-import member5 from "../img/members.jpg";
+import member4 from "../img/QuynhNhu.jpg";
+import member5 from "../img/Khuyen.jpg";
 import member6 from "../img/MinhThu.jpg";
 
 import "../cssPages/Home.css";
@@ -271,11 +273,14 @@ function Home() {
 
       <div className="home-hero">
         <div className="hero-image">
-          <img src={nhaCoBinhThuy} alt="Hero" />
+          <img src={anhNhom} alt="Hero" />
         </div>
         <div className="hero-content">
-          <h1>Chào Mừng Đến Với Đại Gia Đình Balabin</h1>
-          <p>Cùng khám phá những sản phẩm tuyệt vời nào ^^</p>
+          <h1>Về chúng tôi</h1>
+          <p>
+            Dự án BALABIN là sáng kiến nhằm chuyển hóa phụ phẩm nông nghiệp – cụ thể là vỏ bắp – thành các sản phẩm thủ công mang giá trị văn hóa và kinh tế. Chúng tôi hướng đến phát triển bền vững thông qua việc giảm thiểu rác thải, bảo tồn nghề thủ công truyền thống vùng Đồng bằng sông Cửu Long, đồng thời tạo sinh kế ổn định cho cộng đồng địa phương. BALABIN không chỉ cung cấp sản phẩm thân thiện với môi trường mà còn lan tỏa lối sống xanh, thúc đẩy nhận thức về tái chế và bảo vệ văn hóa Việt.
+          </p>
+
           <button
             className="hero-btn"
             onClick={() => (window.location.href = "/shop")}
@@ -470,6 +475,15 @@ function Home() {
             <h3>Art House</h3>
             <p>
               Đối tác đồng hành trong lĩnh vực mỹ thuật ứng dụng và kênh phân phối sản phẩm sáng tạo.
+            </p>
+          </div>
+          <div className="partner-card">
+            <div className="partner-logo">
+              <img src={quyenDesigner} alt="Đối tác 3" />
+            </div>
+            <h3>Quyen Designer</h3>
+            <p>
+              Đối tác thiết kế bộ nhân diện thương hiệu và in ấn phẩm truyền thông cho Balabin.
             </p>
           </div>
         </div>
