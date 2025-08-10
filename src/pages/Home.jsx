@@ -312,12 +312,13 @@ function Home() {
         <div className="activities-container">
           <div className="activity-item">
             <div className="activity-image">
-              <img src={img10} alt="Hoạt động 1" />
+              <img src={img2} alt="Hoạt động 1" />
             </div>
             <div className="activity-content">
-              <h3>Sản xuất vật liệu bền vững thân thiện môi trường</h3>
+              <h3>Nâng cao nhận thức, ý thức bảo vệ môi trường</h3>
               <p>
-                Quy trình sản xuất tuân thủ các tiêu chuẩn xanh, sử dụng nguyên liệu tái chế từ vỏ bắp.
+                Chủ động nâng cao ý thức bảo vệ môi trường, đồng thời lan tỏa tinh thần trách nhiệm, khuyến khích mỗi cá nhân và tập thể cùng chung tay gìn giữ, bảo vệ hệ sinh thái và môi trường sống bền vững cho thế hệ hôm nay và mai sau.
+
               </p>
             </div>
           </div>
@@ -329,7 +330,8 @@ function Home() {
             <div className="activity-content">
               <h3>Tạo ra nguồn thu nhập cho cộng đồng</h3>
               <p>
-                Tổ chức các khóa đào tạo kỹ năng thủ công và phát triển sản phẩm bền vững.
+                Tổ chức các khóa đào tạo kỹ năng thủ công truyền thống kết hợp kiến thức phát triển sản phẩm bền vững, giúp học viên vừa gìn giữ nét đẹp văn hóa, vừa tạo ra những sản phẩm thân thiện với môi trường, đáp ứng nhu cầu thị trường hiện đại.
+
               </p>
             </div>
           </div>
@@ -339,24 +341,15 @@ function Home() {
               <img src={img4} alt="Hoạt động 3" />
             </div>
             <div className="activity-content">
-              <h3>Hợp tác để phát triển</h3>
+              <h3>Kết nối doanh nghiệp</h3>
               <p>
-                Tăng cường liên kết với đối tác địa phương, doanh nghiệp cùng xây dựng chuỗi cung ứng xanh và mở rộng thị trường.
+                Tăng cường hợp tác và liên kết chặt chẽ với các đối tác, doanh nghiệp trong và ngoài nước, cùng chung tay xây dựng chiến lược phát triển, mở rộng thị trường tiêu thụ, tạo điều kiện để sản phẩm tiếp cận nhiều khách hàng hơn và nâng cao giá trị thương hiệu.
+
               </p>
             </div>
           </div>
 
-          <div className="activity-item reverse">
-            <div className="activity-image">
-              <img src={img2} alt="Hoạt động 4" />
-            </div>
-            <div className="activity-content">
-              <h3>Lan tỏa ý thức bảo vệ môi trường</h3>
-              <p>
-                Nhân cao ý thức bảo vệ môi trường, lan tỏa trách nhiệm bảo vệ môi trường với cộng đồng.
-              </p>
-            </div>
-          </div>
+
         </div>
       </div>
 
