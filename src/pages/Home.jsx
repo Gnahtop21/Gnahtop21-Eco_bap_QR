@@ -470,15 +470,7 @@ function Home() {
               Đối tác đồng hành trong lĩnh vực mỹ thuật ứng dụng và kênh phân phối sản phẩm sáng tạo.
             </p>
           </div>
-          <div className="partner-card">
-            <div className="partner-logo">
-              <img src={quyenDesigner} alt="Đối tác 3" />
-            </div>
-            <h3>Quyen Designer</h3>
-            <p>
-              Đối tác thiết kế bộ nhân diện thương hiệu và in ấn phẩm truyền thông cho Balabin.
-            </p>
-          </div>
+
         </div>
       </div>
     </div>
